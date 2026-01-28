@@ -1,5 +1,6 @@
 package com.financial.management;
 
+import com.financial.management.domain.Category;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
