@@ -2,9 +2,13 @@ package com.financial.management.domain;
 
 import com.financial.management.domain.enums.CategoryType;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Table(name = "tb_category")
+@Getter
+@Setter
 public class Category {
 
     @Id
@@ -17,31 +21,5 @@ public class Category {
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private CategoryType categoryType;
-
-    public Category() {}
-
-    public Long getCategoryId() {
-        return categoryId;
-    }
-
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public CategoryType getCategoryType() {
-        return categoryType;
-    }
-
-    public void setCategoryType(CategoryType categoryType) {
-        this.categoryType = categoryType;
-    }
 
 }

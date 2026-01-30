@@ -8,8 +8,8 @@ import lombok.Setter;
 @Setter
 public class RevenueResponse {
 
-    private Long id;
     private String description;
     private Double value;
     private Category category;
+
 }

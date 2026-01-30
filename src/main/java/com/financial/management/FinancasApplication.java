@@ -1,6 +1,5 @@
 package com.financial.management;
 
-import com.financial.management.domain.Category;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -9,5 +8,6 @@ public class FinancasApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(FinancasApplication.class, args);
+        System.out.println("Hello World!");
 	}
 }
