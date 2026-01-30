@@ -34,4 +34,7 @@ public class Revenue {
         this.createdDate = LocalDateTime.now();
     }
 
+    public Long getId() {
+        return revenueId;
+    }
 }

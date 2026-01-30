@@ -23,5 +23,4 @@ public enum CategoryType {
         }
         throw new IllegalArgumentException("Invalid category type code");
     }
-
 }
