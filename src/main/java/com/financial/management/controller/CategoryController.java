@@ -3,6 +3,7 @@ package com.financial.management.controller;
 
 import com.financial.management.domain.Category;
 import com.financial.management.service.CategoryService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,6 +14,7 @@ import java.util.List;
 @CrossOrigin
 public class CategoryController {
 
+    @Autowired
     private final CategoryService service;
 
     public CategoryController(CategoryService service) {
@@ -28,4 +30,5 @@ public class CategoryController {
     public List<Category> list() {
         return service.findAll();
     }
+
 }

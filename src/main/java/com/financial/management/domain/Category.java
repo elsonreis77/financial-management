@@ -43,4 +43,5 @@ public class Category {
     public void setCategoryType(CategoryType categoryType) {
         this.categoryType = categoryType;
     }
+
 }
