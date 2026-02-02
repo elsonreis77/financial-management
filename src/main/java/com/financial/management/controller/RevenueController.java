@@ -1,11 +1,10 @@
 package com.financial.management.controller;
 
 import com.financial.management.domain.Revenue;
-import com.financial.management.dto.request.CategoryRequest;
 import com.financial.management.dto.request.RevenueRequest;
 import com.financial.management.dto.response.RevenueResponse;
 import com.financial.management.service.RevenueService;
-import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.annotation.Nullable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,8 +15,7 @@ import java.util.List;
 @CrossOrigin
 public class RevenueController {
 
-    @Autowired
-    private RevenueService service;
+    private final RevenueService service;
 
     public RevenueController(RevenueService service) {
         this.service = service;

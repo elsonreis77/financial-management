@@ -5,19 +5,19 @@ public enum CategoryType {
     RECEITA(1),
     DESPESA(2);
 
-    private Integer code;
+    private final Integer categoryTypeCode;
 
     CategoryType(Integer code) {
-        this.code = code;
+        this.categoryTypeCode = code;
     }
 
-    public int getCode() {
-        return code;
+    public int getCategoryTypeCode() {
+        return categoryTypeCode;
     }
 
     public static CategoryType valueOf(Integer code){
         for (CategoryType value : CategoryType.values()){
-            if (value.getCode() == code){
+            if (value.getCategoryTypeCode() == code){
                 return value;
             }
         }

@@ -9,7 +9,7 @@ import lombok.Setter;
 public class RevenueRequest {
 
     private String description;
-    private Double value;
+    private Double amount;
     private Category category;
 
 }
